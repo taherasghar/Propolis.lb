@@ -1,0 +1,24 @@
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\bin\Debug\net8.0\Propolis.Models.deps.json
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\bin\Debug\net8.0\Propolis.Models.dll
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\bin\Debug\net8.0\Propolis.Models.pdb
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.AssemblyInfoInputs.cache
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.AssemblyInfo.cs
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.csproj.CoreCompileInputs.cache
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.dll
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\refint\Propolis.Models.dll
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.pdb
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\ref\Propolis.Models.dll
+C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\bin\Debug\net8.0\Propolis.Models.deps.json
+C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\bin\Debug\net8.0\Propolis.Models.dll
+C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\bin\Debug\net8.0\Propolis.Models.pdb
+C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\obj\Debug\net8.0\Propolis.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\obj\Debug\net8.0\Propolis.Models.AssemblyInfoInputs.cache
+C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\obj\Debug\net8.0\Propolis.Models.AssemblyInfo.cs
+C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\obj\Debug\net8.0\Propolis.Models.csproj.CoreCompileInputs.cache
+C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\obj\Debug\net8.0\Propolis.Models.dll
+C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\obj\Debug\net8.0\refint\Propolis.Models.dll
+C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\obj\Debug\net8.0\Propolis.Models.pdb
+C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\obj\Debug\net8.0\ref\Propolis.Models.dll
+C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\obj\Debug\net8.0\Propolis.Models.csproj.AssemblyReference.cache
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.csproj.AssemblyReference.cache

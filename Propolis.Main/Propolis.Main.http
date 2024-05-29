@@ -1,0 +1,6 @@
+@Propolis.Main_HostAddress = http://localhost:5220
+
+GET {{Propolis.Main_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

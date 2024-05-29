@@ -1,0 +1,18 @@
+.brand-logo {
+    height: 3rem;
+    margin-right: 10px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-icon {
+    animation: rotate 0.4s linear forwards;
+}
