@@ -74,7 +74,7 @@ export default function Register() {
       );
       console.log(JSON.stringify(response?.data));
       const accessToken = response.data.token;
-      sessionStorage.setItem("accessToken", accessToken);
+      localStorage.setItem("accessToken", accessToken);
       navigate("/");
     } catch (error) {
       // if (error.response.data?.status === 400) {
@@ -188,10 +188,7 @@ export default function Register() {
                 />
               </Grid>
               <Grid item xs={12}>
-                <FormControl
-                  variant="outlined"
-                  fullWidth
-                >
+                <FormControl variant="outlined" fullWidth>
                   <InputLabel htmlFor="outlined-adornment-password">
                     New Password
                   </InputLabel>

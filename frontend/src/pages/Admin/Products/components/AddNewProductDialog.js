@@ -12,8 +12,6 @@ import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import LoadingButton from "@mui/lab/LoadingButton";
 import SaveIcon from "@mui/icons-material/Save";
 import useAxiosPrivate from "../../../../hooks/useAxiosPrivate";
-import axios from "../../../../api/axios";
-import { isObject } from "@mui/x-data-grid/internals";
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
   clipPath: "inset(50%)",
@@ -41,6 +39,7 @@ const AddNewProductDialog = () => {
 
   const handleClose = () => {
     setOpen(false);
+    setUploading(false);
   };
   const handleFileChange = (event) => {
     const uploadedFile = event.target.files[0];
@@ -79,7 +78,7 @@ const AddNewProductDialog = () => {
         }
       );
       alert(response.data);
-      
+
       setPreviewImage(null);
       handleClose();
     } catch (error) {

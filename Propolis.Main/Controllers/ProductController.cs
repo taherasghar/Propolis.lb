@@ -74,16 +74,12 @@ namespace Propolis.lb.Controllers
             return CreatedAtAction(nameof(GetById), new { id = createdProduct.Id }, createdProduct);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(Guid id, [FromForm] ProductDTO productDTO)
+        [HttpPut("update-product/{id}")]
+        public async Task<IActionResult> Update(Guid id, [FromForm] UpdateProductDTO updateProductDTO)
         {
 
-            List<string> supportedTypes = new List<string> { "image/jpeg", "image/png", "image/gif", "image/bmp" };
-            if (!supportedTypes.Contains(productDTO.Image.GetType().ToString()))
-            {
-                return BadRequest("Invalid file type.");
-            }
-            var updatedProduct = await _productRepo.UpdateAsync(id, productDTO);
+
+            var updatedProduct = await _productRepo.UpdateAsync(id, updateProductDTO);
             if (updatedProduct == null)
             {
                 return NotFound("Product either not found or duplicated name conflict");
@@ -92,6 +88,7 @@ namespace Propolis.lb.Controllers
             return Ok(updatedProduct);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("delete/{id}")]
         public async Task<IActionResult> DeleteById(Guid id)
         {

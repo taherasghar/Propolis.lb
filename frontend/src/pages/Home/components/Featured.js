@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
 import OpenInNewOutlinedIcon from "@mui/icons-material/OpenInNewOutlined";
-import spring_honey from "../../../images/Honey_Spring-removebg-preview.png";
-import bee_pollen from "../../../images/Bee_Pollen_1KG_jar-removebg-preview.png";
-import honey_with_nuts from "../../../images/Spring_Honey_with_Nuts-removebg-preview.png";
 import { Link } from "react-router-dom";
 
 function Featured() {
@@ -36,23 +33,15 @@ function Featured() {
           <div className="col-10 col-md-4 col-lg-3 mb-5 mb-md-0 shadow-lg p-3 mb-5 rounded">
             <Link
               className="product-item"
-              to={`/products/1`}
-              state={{
-                product: {
-                  name: "Bee Pollen 1KG",
-                  price: "$18.5",
-                  imgURL: bee_pollen,
-                  description: "Amazing product, very healthy, original 100%",
-                },
-              }}
+              to={`/products/458bd4ce-dd5b-45b9-bca9-4a97bd9c9a10`}
             >
               <img
-                src={bee_pollen}
+                src="http://localhost:5220/Images/8bd3aa0a-2066-4413-83b4-27985b0fe803_Propolis 50 Tablets.png"
                 className="img-fluid product-thumbnail"
                 alt=""
               />
-              <h3 className="product-title">Bee Pollen 1 KG</h3>
-              <strong className="product-price">$18.5</strong>
+              <h3 className="product-title">Propolis 50 Tablets</h3>
+              <strong className="product-price">$18.0</strong>
 
               <span className="icon-cross">
                 <OpenInNewOutlinedIcon />
@@ -63,23 +52,15 @@ function Featured() {
           <div className="col-10 col-md-4 col-lg-3 mb-md-0 shadow-lg p-3 rounded">
             <Link
               className="product-item"
-              to={`/products/2`}
-              state={{
-                product: {
-                  name: "Spring Honey 1KG",
-                  price: "$16.0",
-                  imgURL: spring_honey,
-                  description: "Amazing product, very healthy, original 100%",
-                },
-              }}
+              to={`/products/03d6e3fb-996c-4f14-8a5a-5b74e3129f6c`}
             >
               <img
-                src={spring_honey}
+                src="http://localhost:5220/Images/0b13245b-4633-4550-84ec-57cefa61cef1_Bee Pollen 1KG.png"
                 className="img-fluid product-thumbnail"
                 alt=""
               />
-              <h3 className="product-title">Spring Honey 1 KG</h3>
-              <strong className="product-price">$16.0</strong>
+              <h3 className="product-title">Bee Pollen 1 KG</h3>
+              <strong className="product-price">$17.0</strong>
 
               <span className="icon-cross">
                 <OpenInNewOutlinedIcon />
@@ -90,23 +71,15 @@ function Featured() {
           <div className="col-10 col-md-4 col-lg-3 mb-5 mb-md-0 shadow-lg p-3 mb-5 rounded">
             <Link
               className="product-item"
-              to={`/products/3`}
-              state={{
-                product: {
-                  name: "Bee Pollen",
-                  price: "$12.0",
-                  imgURL: honey_with_nuts,
-                  description: "Amazing product, very healthy, original 100%",
-                },
-              }}
+              to={`/products/6e00b26f-dd17-4055-a728-8831d70fb83a`}
             >
               <img
-                src={honey_with_nuts}
+                src="http://localhost:5220/Images/738e80a9-7e1f-4b7c-99c8-50660f66e575_Vitex Honey.png"
                 className="img-fluid product-thumbnail"
                 alt=""
               />
-              <h3 className="product-title">Honey With Nuts 0.5 KG</h3>
-              <strong className="product-price">$12.0</strong>
+              <h3 className="product-title">Vitex Honey 0.5 KG</h3>
+              <strong className="product-price">$33.0</strong>
 
               <span className="icon-cross">
                 <OpenInNewOutlinedIcon />

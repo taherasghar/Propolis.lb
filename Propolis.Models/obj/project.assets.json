@@ -913,11 +913,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tga\\Desktop\\Propolis.lb Project\\Propolis.Models\\Propolis.Models.csproj",
+      "projectUniqueName": "H:\\Propolis.lb Project\\Propolis.Models\\Propolis.Models.csproj",
       "projectName": "Propolis.Models",
-      "projectPath": "C:\\Users\\tga\\Desktop\\Propolis.lb Project\\Propolis.Models\\Propolis.Models.csproj",
+      "projectPath": "H:\\Propolis.lb Project\\Propolis.Models\\Propolis.Models.csproj",
       "packagesPath": "C:\\Users\\tga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tga\\Desktop\\Propolis.lb Project\\Propolis.Models\\obj\\",
+      "outputPath": "H:\\Propolis.lb Project\\Propolis.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tga\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -980,7 +980,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

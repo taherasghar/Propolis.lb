@@ -8,7 +8,7 @@ const useFetchAllProducts = () => {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
-      // await new Promise((resolve) => setTimeout(resolve, 3000));
+      await new Promise((resolve) => setTimeout(resolve, 300));
       try {
         const response = await axios.get("/api/products/get-all-products");
         setProducts(response.data);
@@ -22,7 +22,7 @@ const useFetchAllProducts = () => {
     fetchData();
   }, []);
 
-  return { products, loading };
+  return { products, loading, setProducts };
 };
 
 export default useFetchAllProducts;

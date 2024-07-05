@@ -10,7 +10,6 @@ import LoadSpinner from "../../components/LoadSpinner";
 import Error from "../Error/Error";
 import isTokenExpired from "../../helpers/isTokenExpired";
 import useAxiosPrivate from "../../hooks/useAxiosPrivate";
-
 function ViewProduct() {
   const [quantity, setQuantity] = useState(1);
   const navigate = useNavigate();
@@ -34,6 +33,7 @@ function ViewProduct() {
         quantity,
       });
       console.log("Added successfully\n" + response.data);
+      navigate("/cart");
     } catch (error) {
       console.log(error.response);
     }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Propolis.DataAccess.Data;
@@ -28,6 +29,7 @@ namespace Propolis.Main.Controllers
 
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet("get-all-users")]
         public async Task<ActionResult<List<User>>> GetAllOrders()
         {

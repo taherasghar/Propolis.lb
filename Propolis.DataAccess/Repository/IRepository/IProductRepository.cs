@@ -12,7 +12,7 @@ namespace Propolis.DataAccess.Repository.IRepository
         Task<List<Product>> GetAllAsync();
         Task<Product?> GetProductByIdAsync(Guid id);
         Task<Product?> CreateAsync(ProductDTO productDTO);
-        Task<Product?> UpdateAsync(Guid id, ProductDTO productDTO);
+        Task<Product?> UpdateAsync(Guid id, UpdateProductDTO updateProductDTO);
 
         Task<Product?> DeleteAsync(Guid id);
 

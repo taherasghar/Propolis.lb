@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import useAxiosPrivate from "./useAxiosPrivate.js";
 
@@ -8,7 +9,7 @@ const useFetchAllOrders = (id) => {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
-      // await new Promise((resolve) => setTimeout(resolve, 3000));
+      await new Promise((resolve) => setTimeout(resolve, 300));
       try {
         const response = await axiosPrivate.get(`/api/order/get-all-orders`);
         setAllOrders(response.data);

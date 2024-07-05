@@ -71,7 +71,7 @@ namespace Propolis.DataAccess.Repository
             return product;
         }
 
-        public async Task<Product?> UpdateAsync(Guid id, ProductDTO productDTO)
+        public async Task<Product?> UpdateAsync(Guid id, UpdateProductDTO updateProductDTO)
         {
             Product? product = await _db.Products.FirstOrDefaultAsync(p => p.Id == id);
             if (product == null)
@@ -79,18 +79,22 @@ namespace Propolis.DataAccess.Repository
                 return null;
             }
 
-            Product? duplicateName = await _db.Products.FirstOrDefaultAsync(p => p.Name == productDTO.Name);
-            if (duplicateName != null && duplicateName.Id != product.Id)
+            if (updateProductDTO.Name != null)
             {
-                return null;
+                Product? duplicateName = await _db.Products.FirstOrDefaultAsync(p => p.Name == updateProductDTO.Name);
+                if (duplicateName != null && duplicateName.Id != product.Id)
+                {
+                    return null;
+                }
             }
 
-            product.Name = productDTO.Name;
-            product.Description = productDTO.Description;
-            product.Price = productDTO.Price;
+
+            product.Name = updateProductDTO.Name;
+            product.Description = updateProductDTO.Description;
+            product.Price = updateProductDTO.Price;
 
             // Handle image update
-            if (productDTO.Image != null)
+            if (updateProductDTO.Image != null)
             {
                 // Delete the old image file if it exists
                 if (!string.IsNullOrEmpty(product.ImageURL))
@@ -103,23 +107,25 @@ namespace Propolis.DataAccess.Repository
                 }
 
                 // Save the new image file
-                string imageFolderPath = Path.Combine(Directory.GetCurrentDirectory(), "Images");
-                if (!Directory.Exists(imageFolderPath))
+                if (updateProductDTO.Image != null)
                 {
-                    Directory.CreateDirectory(imageFolderPath);
+                    string imageFolderPath = Path.Combine(Directory.GetCurrentDirectory(), "Images");
+                    if (!Directory.Exists(imageFolderPath))
+                    {
+                        Directory.CreateDirectory(imageFolderPath);
+                    }
+
+                    string uniqueFileName = $"{Guid.NewGuid()}_{updateProductDTO.Image.FileName}";
+                    string newImagePath = Path.Combine(imageFolderPath, uniqueFileName);
+
+                    using (var stream = new FileStream(newImagePath, FileMode.Create))
+                    {
+                        await updateProductDTO.Image.CopyToAsync(stream);
+                    }
+
+                    product.ImageURL = $"/Images/{uniqueFileName}";
                 }
-
-                string uniqueFileName = $"{Guid.NewGuid()}_{productDTO.Image.FileName}";
-                string newImagePath = Path.Combine(imageFolderPath, uniqueFileName);
-
-                using (var stream = new FileStream(newImagePath, FileMode.Create))
-                {
-                    await productDTO.Image.CopyToAsync(stream);
-                }
-
-                product.ImageURL = $"/Images/{uniqueFileName}";
             }
-
             await _db.SaveChangesAsync();
             return product;
         }

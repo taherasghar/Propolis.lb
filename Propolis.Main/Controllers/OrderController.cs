@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Propolis.DataAccess.Data;
@@ -24,7 +25,7 @@ namespace Propolis.Main.Controllers
             _productRepo = productRepo;
 
         }
-
+        [Authorize]
         [HttpPost("submit-order")]
         public async Task<ActionResult> SubmitOrder([FromBody] SubmitedOrderDTO orderDTO)
         {
@@ -92,7 +93,7 @@ namespace Propolis.Main.Controllers
             return Ok("Order submitted successfully");
         }
 
-
+        [Authorize]
         [HttpGet("get-all-orders")]
         public async Task<ActionResult<List<Order>>> GetAllOrders()
         {
@@ -102,7 +103,7 @@ namespace Propolis.Main.Controllers
             return Ok(orders);
         }
 
-
+        [Authorize]
         [HttpGet("get-orders-by-user-id")]
         public async Task<ActionResult<List<Order>>> GetOrdersByUserId()
         {

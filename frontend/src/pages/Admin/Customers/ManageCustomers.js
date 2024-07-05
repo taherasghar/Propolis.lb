@@ -1,6 +1,7 @@
 import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import useFetchAllUsers from "../../../hooks/useFetchAllUser";
+import LoadSpinner from "../../../components/LoadSpinner";
 
 function ManageCustomers() {
   const { users, loading } = useFetchAllUsers();
@@ -35,7 +36,9 @@ function ManageCustomers() {
     : users;
 
   !loading && console.table(users);
-  return (
+  return loading ? (
+    <LoadSpinner />
+  ) : (
     <div>
       {" "}
       <div>

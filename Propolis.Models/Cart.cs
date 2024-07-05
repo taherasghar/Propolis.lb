@@ -10,6 +10,7 @@ namespace Propolis.Models
 {
     public class Cart
     {
+        //Cart
         [Key]
         public Guid Id { get; set; }
 

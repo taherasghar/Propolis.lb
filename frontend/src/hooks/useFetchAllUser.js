@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import useAxiosPrivate from "../hooks/useAxiosPrivate.js";
 
@@ -8,7 +9,7 @@ const useFetchAllUsers = () => {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
-      await new Promise((resolve) => setTimeout(resolve, 3000));
+      await new Promise((resolve) => setTimeout(resolve, 300));
       try {
         const response = await axiosPrivate.get("/api/users/get-all-users");
         setUsers(response.data);

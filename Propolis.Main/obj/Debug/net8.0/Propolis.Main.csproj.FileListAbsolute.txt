@@ -294,3 +294,4 @@ C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Main\bin\Debug\net8.0\Microsof
 C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Main\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Main\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Main\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\tga\Desktop\Propolis.lb Project\propolis.main\obj\Debug\net8.0\Propolis.Main.sourcelink.json

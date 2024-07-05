@@ -18,7 +18,7 @@ namespace Propolis.Models.DTO
         [EmailAddress]
         public string? Email { get; set; }
         [Required]
-        [MinLength(4, ErrorMessage = "Minimum password length is 4 chars")]
+        [MinLength(6, ErrorMessage = "Minimum password length is 6 chars")]
         public string? Password { get; set; }
     }
 }

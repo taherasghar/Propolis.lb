@@ -12,29 +12,18 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import { DataGrid } from "@mui/x-data-grid";
+import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import useFetchAllOrders from "../../../hooks/useFetchAllOrders";
-
+import LoadSpinner from "../../../components/LoadSpinner";
 export default function CollapsibleTable() {
   const { allOrders, loading } = useFetchAllOrders();
-  const columns = [
-    { field: "id", headerName: "Order ID", width: 200 },
-    { field: "orderDate", headerName: "Order Date", width: 200 },
-    { field: "userId", headerName: "User ID", width: 200 },
-    { field: "customerName", headerName: "Customer Name", width: 200 },
-    { field: "contactNumber", headerName: "Contact Number", width: 200 },
-    { field: "city", headerName: "City", width: 200 },
-    { field: "deliveryAddress", headerName: "Delivery Address", width: 200 },
-    { field: "orderNotes", headerName: "Order Notes", width: 200 },
-    { field: "totalAmount", headerName: "Total Amount", width: 200 },
-  ];
 
   const rows = allOrders.map((order) => ({
     id: order.id,
     userId: order.userId,
     customerName: order.customerName,
     contactNumber: order.contactNumber,
-    orderDate : new Date(order.orderDate).toLocaleDateString(),
+    orderDate: new Date(order.orderDate).toLocaleDateString(),
     city: order.city,
     deliveryAddress: order.deliveryAddress,
     orderNotes: order.orderNotes,
@@ -48,7 +37,9 @@ export default function CollapsibleTable() {
     })),
   }));
 
-  return (
+  return loading ? (
+    <LoadSpinner />
+  ) : (
     <TableContainer component={Paper}>
       <Table aria-label="collapsible table">
         <TableHead>
@@ -113,7 +104,6 @@ function Row(props) {
                 Order Items
               </Typography>
               <DataGrid
-                rows={row.history}
                 columns={[
                   { field: "productId", headerName: "Product ID", width: 200 },
                   {
@@ -124,6 +114,8 @@ function Row(props) {
                   { field: "quantity", headerName: "Quantity", width: 200 },
                   { field: "unitPrice", headerName: "Unit Price", width: 200 },
                 ]}
+                rows={row.history}
+
               />
             </Box>
           </Collapse>

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import axios from "../api/axios.js";
 
@@ -8,7 +9,7 @@ const useFetchSingleProduct = (id) => {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
-      // await new Promise((resolve) => setTimeout(resolve, 3000));
+      await new Promise((resolve) => setTimeout(resolve, 300));
       try {
         const response = await axios.get(`/api/products/get-by-id/${id}`);
         setProduct(response.data);

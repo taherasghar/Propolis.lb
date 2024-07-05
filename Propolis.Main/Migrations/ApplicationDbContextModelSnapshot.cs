@@ -51,13 +51,13 @@ namespace Propolis.Main.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "6cbdcc57-5a29-41a1-9122-032cb8065bb9",
+                            Id = "fff1c212-e39d-4891-bf34-6f5d01da6e74",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "03e4f54e-840d-419f-91e6-03615e16c11b",
+                            Id = "65bb39ed-dff7-4988-b3d1-dd37d8c6f148",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -256,7 +256,7 @@ namespace Propolis.Main.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderItems");
+                    b.ToTable("OrderItem");
                 });
 
             modelBuilder.Entity("Propolis.Models.Product", b =>
@@ -423,7 +423,7 @@ namespace Propolis.Main.Migrations
             modelBuilder.Entity("Propolis.Models.OrderItem", b =>
                 {
                     b.HasOne("Propolis.Models.Order", null)
-                        .WithMany("Products")
+                        .WithMany("OrderItems")
                         .HasForeignKey("OrderId");
 
                     b.HasOne("Propolis.Models.Product", "Product")
@@ -437,7 +437,7 @@ namespace Propolis.Main.Migrations
 
             modelBuilder.Entity("Propolis.Models.Order", b =>
                 {
-                    b.Navigation("Products");
+                    b.Navigation("OrderItems");
                 });
 #pragma warning restore 612, 618
         }

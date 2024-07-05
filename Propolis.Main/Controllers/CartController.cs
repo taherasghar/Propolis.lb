@@ -29,7 +29,7 @@ namespace Propolis.Main.Controllers
             _productRepo = productRepo;
         }
 
-
+        [Authorize]
         [HttpGet("get-all-cart-items")]
         public async Task<ActionResult<List<Cart>>> GetAllAsync()
         {
@@ -68,7 +68,7 @@ namespace Propolis.Main.Controllers
 
             return cartItems;
         }
-
+        [Authorize]
         [HttpPost("add-item-to-cart")]
         public async Task<ActionResult<Cart>> AddToCart(AddCartItemDTO cartItemDTO)
         {
@@ -119,7 +119,7 @@ namespace Propolis.Main.Controllers
             return CreatedAtAction(nameof(GetById), new { id = cartItem.Id }, cartItem);
         }
 
-
+        [Authorize]
         [HttpPut("update-cart-item-quantity")]
         public async Task<ActionResult<Cart>> UpdateCartItemQuantity([FromBody] UpdateCartQuantityDTO updateCartQuantityDTOcartQuantityDTO)
         {
@@ -140,7 +140,7 @@ namespace Propolis.Main.Controllers
             return Ok(response);
         }
 
-
+        [Authorize]
         [HttpDelete("remove-item-from-cart/{cartItemId}")]
         public async Task<ActionResult> RemoveFromCart(Guid cartItemId)
         {

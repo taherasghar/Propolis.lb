@@ -2775,11 +2775,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tga\\Desktop\\Propolis.lb Project\\Propolis.DataAccess\\Propolis.DataAccess.csproj",
+      "projectUniqueName": "H:\\Propolis.lb Project\\Propolis.DataAccess\\Propolis.DataAccess.csproj",
       "projectName": "Propolis.DataAccess",
-      "projectPath": "C:\\Users\\tga\\Desktop\\Propolis.lb Project\\Propolis.DataAccess\\Propolis.DataAccess.csproj",
+      "projectPath": "H:\\Propolis.lb Project\\Propolis.DataAccess\\Propolis.DataAccess.csproj",
       "packagesPath": "C:\\Users\\tga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tga\\Desktop\\Propolis.lb Project\\Propolis.DataAccess\\obj\\",
+      "outputPath": "H:\\Propolis.lb Project\\Propolis.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tga\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2796,8 +2796,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\tga\\Desktop\\Propolis.lb Project\\Propolis.Models\\Propolis.Models.csproj": {
-              "projectPath": "C:\\Users\\tga\\Desktop\\Propolis.lb Project\\Propolis.Models\\Propolis.Models.csproj"
+            "H:\\Propolis.lb Project\\Propolis.Models\\Propolis.Models.csproj": {
+              "projectPath": "H:\\Propolis.lb Project\\Propolis.Models\\Propolis.Models.csproj"
             }
           }
         }
@@ -2862,7 +2862,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

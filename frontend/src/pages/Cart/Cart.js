@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
 import ReorderRoundedIcon from "@mui/icons-material/ReorderRounded";
 import Box from "@mui/material/Box";
@@ -14,15 +13,15 @@ import LoadSpinner from "../../components/LoadSpinner";
 import isTokenExpired from "../../helpers/isTokenExpired";
 import useDeleteCartItem from "../../hooks/useDeleteCartItem";
 import useAxiosPrivate from "../../hooks/useAxiosPrivate";
-
-const DELIVERY_CHARGE = 3.0;
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
   const { cartItems, loading, setCartItems } = useFetchUserCartItems();
   const axiosPrivate = useAxiosPrivate();
-  const { setId, deleteLoading } = useDeleteCartItem();
-
+  const { setId } = useDeleteCartItem();
+  const navigate = useNavigate();
   const [subtotal, setSubtotal] = useState(0);
+  const [DELIVERY_CHARGE, setDeliveryCharge] = useState(0);
   const [orderDetails, setOrderDetails] = useState({
     customerName: "",
     contactNumber: "",
@@ -36,6 +35,11 @@ function Cart() {
       (total, item) => total + item.product.price * item.quantity,
       0
     );
+    if (calculatedSubtotal > 0) {
+      setDeliveryCharge(3.0);
+    } else {
+      setDeliveryCharge(0.0);
+    }
     setSubtotal(calculatedSubtotal);
   }, [cartItems]);
 
@@ -91,11 +95,9 @@ function Cart() {
     };
     console.log(orderData);
     try {
-      const response = await axiosPrivate.post(
-        "/api/order/submit-order",
-        orderData
-      );
+      await axiosPrivate.post("/api/order/submit-order", orderData);
       console.log("Order submitted successfully!");
+      navigate("/orders-history");
     } catch (error) {
       console.error("Error submitting order:", error);
     }

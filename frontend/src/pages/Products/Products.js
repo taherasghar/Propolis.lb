@@ -4,14 +4,11 @@ import { Link } from "react-router-dom";
 import useFetchAllProducts from "../../hooks/useFetchAllProducts";
 import LoadSpinner from "../../components/LoadSpinner";
 function Products() {
-  const spinner = LoadSpinner();
   const { products, loading } = useFetchAllProducts();
 
-  if (loading) {
-    return spinner;
-  }
-  console.log(products);
-  return (
+  return loading ? (
+    <LoadSpinner />
+  ) : (
     <div>
       <div className="hero">
         <div className="container">
@@ -56,7 +53,7 @@ function Products() {
                         className="img-fluid product-thumbnail rounded"
                       />
                       <h3 className="product-title text-center">{p.name}</h3>
-                      <strong className="product-price">{p.price}</strong>
+                      <strong className="product-price">${p.price}</strong>
                       <span className="icon-cross">
                         <OpenInNewOutlinedIcon />
                       </span>

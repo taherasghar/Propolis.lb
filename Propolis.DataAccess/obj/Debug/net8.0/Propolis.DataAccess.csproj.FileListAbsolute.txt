@@ -32,3 +32,4 @@ C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.DataAccess\bin\Debug\ne
 C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DD1F34D0.Up2Date
 C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.genruntimeconfig.cache
 C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.DataAccess\obj\Debug\net8.0\ref\Propolis.DataAccess.dll
+C:\Users\tga\Desktop\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.sourcelink.json
