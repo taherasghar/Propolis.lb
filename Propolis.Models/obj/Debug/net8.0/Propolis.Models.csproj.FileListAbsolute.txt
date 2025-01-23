@@ -23,3 +23,16 @@ C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\obj\Debug\net8.0
 C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.Models\obj\Debug\net8.0\Propolis.Models.csproj.AssemblyReference.cache
 C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.csproj.AssemblyReference.cache
 C:\Users\tga\Desktop\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.sourcelink.json
+H:\Propolis.lb Project\Propolis.Models\bin\Debug\net8.0\Propolis.Models.deps.json
+H:\Propolis.lb Project\Propolis.Models\bin\Debug\net8.0\Propolis.Models.dll
+H:\Propolis.lb Project\Propolis.Models\bin\Debug\net8.0\Propolis.Models.pdb
+H:\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.csproj.AssemblyReference.cache
+H:\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.GeneratedMSBuildEditorConfig.editorconfig
+H:\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.AssemblyInfoInputs.cache
+H:\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.AssemblyInfo.cs
+H:\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.csproj.CoreCompileInputs.cache
+H:\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.sourcelink.json
+H:\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.dll
+H:\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\refint\Propolis.Models.dll
+H:\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\Propolis.Models.pdb
+H:\Propolis.lb Project\Propolis.Models\obj\Debug\net8.0\ref\Propolis.Models.dll

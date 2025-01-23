@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Propolis.Main")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c02ee9eb4c5ebe6c1b8727dde5fbf449f8ab25d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2887e12ba437c17d76fa388fe7da88df6c127fe4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Propolis.Main")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Propolis.Main")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -66,7 +66,7 @@ const defaultTheme = createTheme();
 // const LPthemeDark = createTheme(getLPTheme("dark"));
 
 function AdminLayout() {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const toggleDrawer = () => {

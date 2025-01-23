@@ -25,7 +25,7 @@ const VisuallyHiddenInput = styled("input")({
 });
 
 const AddNewProductDialog = () => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
   const [previewImage, setPreviewImage] = useState(null);
   const [name, setName] = useState(null);

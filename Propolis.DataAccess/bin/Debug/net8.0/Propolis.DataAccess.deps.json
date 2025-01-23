@@ -726,7 +726,10 @@
           "Microsoft.Extensions.Identity.Core": "8.0.5"
         },
         "runtime": {
-          "Propolis.Models.dll": {}
+          "Propolis.Models.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

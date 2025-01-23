@@ -46,8 +46,8 @@ namespace Propolis.Main.Controllers
             return Ok(
                 new UserDTO
                 {
-                    UserName = user.UserName,
-                    Email = user.Email,
+                    UserName = user.UserName ?? "",
+                    Email = user.Email ?? "",
                     Token = await _tokenService.CreateToken(user)
                 }
             );

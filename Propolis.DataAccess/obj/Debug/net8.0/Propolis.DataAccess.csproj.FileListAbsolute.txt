@@ -33,3 +33,21 @@ C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.DataAccess\obj\Debug\ne
 C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.genruntimeconfig.cache
 C:\Users\tga\Desktop\Propolis.lb Project Tester\Propolis.DataAccess\obj\Debug\net8.0\ref\Propolis.DataAccess.dll
 C:\Users\tga\Desktop\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.sourcelink.json
+H:\Propolis.lb Project\Propolis.DataAccess\bin\Debug\net8.0\Propolis.DataAccess.deps.json
+H:\Propolis.lb Project\Propolis.DataAccess\bin\Debug\net8.0\Propolis.DataAccess.runtimeconfig.json
+H:\Propolis.lb Project\Propolis.DataAccess\bin\Debug\net8.0\Propolis.DataAccess.dll
+H:\Propolis.lb Project\Propolis.DataAccess\bin\Debug\net8.0\Propolis.DataAccess.pdb
+H:\Propolis.lb Project\Propolis.DataAccess\bin\Debug\net8.0\Propolis.Models.dll
+H:\Propolis.lb Project\Propolis.DataAccess\bin\Debug\net8.0\Propolis.Models.pdb
+H:\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.csproj.AssemblyReference.cache
+H:\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+H:\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.AssemblyInfoInputs.cache
+H:\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.AssemblyInfo.cs
+H:\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.csproj.CoreCompileInputs.cache
+H:\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.sourcelink.json
+H:\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DD1F34D0.Up2Date
+H:\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.dll
+H:\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\refint\Propolis.DataAccess.dll
+H:\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.pdb
+H:\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\Propolis.DataAccess.genruntimeconfig.cache
+H:\Propolis.lb Project\Propolis.DataAccess\obj\Debug\net8.0\ref\Propolis.DataAccess.dll
